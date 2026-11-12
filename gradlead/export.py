@@ -162,3 +162,57 @@ def to_csv(records: list[dict]) -> str:
 def mark_exported(conn, ids: list[int]) -> None:
     conn.executemany("UPDATE professors SET status = 'exported' WHERE id = ? AND status = 'drafted'", [(i,) for i in ids])
     conn.commit()
+
+
+def _loads(value, default):
+    try:
+        return json.loads(value) if value else default
+    except (TypeError, ValueError):
+        return default
+
+
+def profiles(conn, email_statuses: tuple[str, ...] | None = None, min_score: int | None = None,
+             region: str | None = None, max_pubs: int = 5) -> list[dict]:
+    """Every professor with an email address, with their profile, match and recent papers (newest first)."""
+    sql = """SELECT p.*, u.name AS university, u.country, u.region,
+                    s.accepting_students, s.accepting_quote, s.accepting_url, s.open_positions,
+                    s.last_pub_year, s.works_count, s.cited_by_count, s.h_index,
+                    m.score, m.classification, m.primary_area, m.matched_projects
+             FROM professors p JOIN universities u ON u.id = p.university_id
+             LEFT JOIN signals s ON s.professor_id = p.id
+             LEFT JOIN matches m ON m.professor_id = p.id
+             WHERE p.email IS NOT NULL AND p.email != ''"""
+    params: list = []
+    if email_statuses:
+        sql += f" AND p.email_status IN ({','.join('?' * len(email_statuses))})"
+        params += email_statuses
+    if min_score is not None:
+        sql += " AND COALESCE(m.score, 0) >= ?"
+        params.append(min_score)
+    if region:
+        sql += " AND u.region = ?"
+        params.append(region)
+    sql += " ORDER BY COALESCE(m.score, 0) DESC, u.name, p.full_name"
+    out = []
+    for r in conn.execute(sql, params).fetchall():
+        r = dict(r)
+        pubs = conn.execute("SELECT title, year, venue, url FROM publications WHERE professor_id = ? "
+                            "ORDER BY year DESC, cited_by DESC LIMIT ?", (r["id"], max_pubs)).fetchall()
+        out.append({
+            "id": r["id"], "email": r["email"], "email_status": r["email_status"],
+            "email_source_url": r["email_source_url"],
+            "full_name": r["full_name"], "title": r["title"], "department": r["department"],
+            "university": r["university"], "country": r["country"], "region": r["region"],
+            "homepage": r["homepage"], "lab_name": r["lab_name"], "lab_url": r["lab_url"],
+            "profile_url": r["profile_url"],
+            "research_interests": _loads(r["interests"], []), "topics": _loads(r["topics"], []),
+            "summary": r["summary"], "status": r["status"],
+            "match": {"score": r["score"], "classification": r["classification"],
+                      "primary_area": r["primary_area"], "matched_projects": _loads(r["matched_projects"], [])},
+            "accepting_students": r["accepting_students"], "accepting_quote": r["accepting_quote"],
+            "accepting_url": r["accepting_url"], "open_positions": _loads(r["open_positions"], []),
+            "metrics": {"h_index": r["h_index"], "works_count": r["works_count"],
+                        "cited_by_count": r["cited_by_count"], "last_pub_year": r["last_pub_year"]},
+            "recent_publications": [dict(p) for p in pubs],
+        })
+    return out

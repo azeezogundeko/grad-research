@@ -181,6 +181,15 @@ def cmd_export(args, conn):
             "unconfirmed_emails": sum(1 for r in records if r["email_status"] == "unconfirmed")}
 
 
+def cmd_export_json(args, conn):
+    statuses = tuple(args.email_status.split(",")) if args.email_status else None
+    records = export.profiles(conn, email_statuses=statuses, min_score=args.min_score, region=args.region)
+    out = Path(args.out) if args.out else ROOT / "exports" / f"{date.today()}-professors.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(records, indent=2, ensure_ascii=False, default=str), encoding="utf-8")
+    return {"file": str(out), "professors": len(records)}
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="gradlead", description="Grad-school professor research store")
     sub = p.add_subparsers(dest="command", required=True)
@@ -322,6 +331,13 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("--dry-run", action="store_true", help="write the file without marking rows exported")
     s.add_argument("--out")
     s.set_defaults(fn=cmd_export)
+
+    s = sub.add_parser("export-json", help="professors with an email and their profile, as JSON (no status change)")
+    s.add_argument("--email-status", help="comma list, e.g. confirmed or confirmed,unconfirmed (default: all)")
+    s.add_argument("--min-score", type=int)
+    s.add_argument("--region")
+    s.add_argument("--out")
+    s.set_defaults(fn=cmd_export_json)
     return p
 
 
