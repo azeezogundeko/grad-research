@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Bash(python3 -m gradlead:*)",
+      "Bash(python3 -m pytest:*)",
+      "Bash(mkdir -p data/tmp)",
+      "Read(./**)",
+      "Edit(./data/**)",
+      "Edit(./exports/**)"
+    ],
+    "deny": [
+      "Read(./.env)"
+    ]
+  }
+}

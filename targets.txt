@@ -1,0 +1,97 @@
+# country|university|professors to discover|where to look (departments, groups, programmes)
+# Loaded with `python3 -m gradlead targets --sync`; driven by scripts/run-batch.sh and /scale.
+
+# --- Canada (supervisor admits and funds; thesis MSc is a strong route)
+Canada|University of Toronto|25|Computer Science (ML, NLP, HCI), Electrical & Computer Engineering; Vector Institute faculty
+Canada|McGill University|20|School of Computer Science, ECE; Mila core/associate faculty
+Canada|Université de Montréal|15|DIRO; Mila core faculty
+Canada|University of Alberta|15|Computing Science; Amii fellows
+Canada|University of British Columbia|20|Computer Science (NLP, HCI), ECE, Linguistics speech lab
+Canada|University of Waterloo|20|Cheriton School of Computer Science, ECE; Vector affiliates
+Canada|Simon Fraser University|12|Computing Science NLP lab, Linguistics
+
+# --- Europe (UK: studentships; NL/Nordics: advertised salaried posts; DE/CH: professors hire directly)
+United Kingdom|University of Edinburgh|25|School of Informatics: ILCC, CSTR (speech), ANC; UKRI CDT in NLP
+United Kingdom|University of Sheffield|15|Computer Science: Speech and Hearing group, NLP group
+United Kingdom|University of Cambridge|15|Engineering (Machine Intelligence lab, speech), Computer Science and Technology (NLP)
+United Kingdom|Imperial College London|15|Computing (NLP, HCI), Electrical and Electronic Engineering
+United Kingdom|University College London|15|Computer Science (UCL NLP, UCLIC HCI), Gatsby
+United Kingdom|University of Oxford|10|Computer Science, Engineering Science (OATML, vision)
+Germany|Saarland University|15|Language Science and Technology (speech, NLP), Computer Science; MPI-INF, DFKI
+Germany|Technical University of Munich|15|Computation, Information and Technology school (ML, speech, vision)
+Switzerland|ETH Zurich|15|Computer Science (NLP, ML, AI center), D-ITET
+Switzerland|EPFL|15|IC school (NLP lab, ML), EE; also Idiap-affiliated speech faculty
+Netherlands|University of Amsterdam|15|Informatics Institute (ILLC NLP, ILPS, VIS Lab)
+Netherlands|Delft University of Technology|12|EEMCS: Multimedia Computing (speech), Interactive Intelligence (human-AI)
+Netherlands|Radboud University|10|Centre for Language Studies (speech), iCIS
+Netherlands|University of Groningen|10|Campus Fryslân speech technology, Bernoulli Institute AI
+Sweden|KTH Royal Institute of Technology|15|Speech, Music and Hearing (TMH), Robotics Perception and Learning; WASP
+Denmark|University of Copenhagen|12|DIKU (CoAStaL NLP, ML), Pioneer Centre for AI
+Finland|Aalto University|12|Computer Science, Information and Communications Engineering (speech recognition); FCAI
+Belgium|KU Leuven|12|Computer Science (LIIR NLP), ESAT (PSI speech/vision)
+
+# --- Middle East (central admissions, fully funded; supervisor interest helps)
+United Arab Emirates|Mohamed bin Zayed University of Artificial Intelligence|25|NLP, Machine Learning, Computer Vision, HCI departments
+Saudi Arabia|King Abdullah University of Science and Technology|15|CEMSE: Computer Science, AI Initiative
+Qatar|Hamad Bin Khalifa University|10|College of Science and Engineering; Qatar Computing Research Institute (Arabic language technologies)
+United Arab Emirates|New York University Abu Dhabi|10|Computer Science, Engineering
+United Arab Emirates|Khalifa University|10|Computer Science, EECS
+
+# --- Australia (supervisor-first; RTP / university research scholarships)
+Australia|Australian National University|12|School of Computing (ML, HCI, vision)
+Australia|University of Melbourne|15|Computing and Information Systems (NLP, HCI), Electrical Engineering
+Australia|Monash University|15|Faculty of Information Technology (data science and AI, human-centred computing)
+Australia|University of New South Wales|15|Computer Science and Engineering, Electrical Engineering (speech)
+Australia|University of Sydney|12|Computer Science, Electrical and Information Engineering
+Australia|University of Queensland|10|Electrical Engineering and Computer Science
+
+# --- China (CSC scholarship needs a supervisor's acceptance; HK: HKPFS, early deadlines)
+China|Tsinghua University|20|Computer Science and Technology (NLP, speech, HCI), Electronic Engineering (speech)
+China|Peking University|15|School of Computer Science, Wangxuan Institute, Institute for AI
+China|Shanghai Jiao Tong University|20|Computer Science (X-LANCE speech lab), AI Institute
+China|Zhejiang University|15|College of Computer Science and Technology
+China|University of Science and Technology of China|12|Electronic Engineering and Information Science (speech), Computer Science
+China|Fudan University|12|School of Computer Science (NLP)
+Hong Kong|Hong Kong University of Science and Technology|15|Computer Science and Engineering, ECE; HKUST (Guangzhou) AI thrust
+Hong Kong|Chinese University of Hong Kong|15|Computer Science and Engineering, Systems Engineering (speech), Electronic Engineering
+Hong Kong|University of Hong Kong|12|Computer Science, Electrical and Electronic Engineering
+
+# --- Turkey (central admission with full scholarships; TÜBİTAK 2215 for international students; supervisor interest helps)
+Turkey|Koç University (KUIS AI Center)|12|Computer Engineering, KUIS AI Center (NLP, vision, multimodal), Electrical and Electronics Engineering
+Turkey|Sabancı University|10|Computer Science and Engineering (NLP, ML, HCI), Electronics Engineering
+Turkey|Bilkent University|10|Computer Engineering (ML, vision, NLP), Electrical and Electronics Engineering (signal and speech processing)
+Turkey|Boğaziçi University|10|Computer Engineering (TABILAB NLP, speech), Electrical and Electronics Engineering (BUSIM speech)
+Turkey|Middle East Technical University|12|Computer Engineering, Electrical-Electronics Engineering, Graduate School of Informatics (cognitive science, speech)
+Turkey|Istanbul Technical University|10|Computer Engineering (ITU NLP group), AI and Data Engineering
+Turkey|Özyeğin University|8|Computer Science (speech, HCI, AI)
+
+# --- USA (PhD-first: funded PhD straight from a BSc; committee admission, Fall 2027 deadlines mostly 1-15 Dec 2026)
+United States|University of Massachusetts Amherst|12|Manning College of Information and Computer Sciences (NLP, ML, HCI)
+United States|Georgia Institute of Technology|12|School of Interactive Computing, School of Computer Science (NLP, ML, HCI), ECE (speech)
+United States|Johns Hopkins University|12|Computer Science, Center for Language and Speech Processing (CLSP), ECE
+United States|University of Illinois Urbana-Champaign|12|Siebel School of Computing and Data Science (NLP, ML), ECE (speech, signal processing)
+United States|University of Texas at Austin|12|Computer Science (NLP, ML), Linguistics computational group, ECE
+United States|University of Michigan|12|Computer Science and Engineering (NLP, ML, HCI), School of Information
+United States|Ohio State University|10|Computer Science and Engineering (NLP, speech), Linguistics
+United States|University of Maryland|10|Computer Science, UMIACS (CLIP lab NLP), iSchool
+United States|University of Southern California|10|Computer Science, Information Sciences Institute (NLP), SAIL speech lab (ECE)
+United States|University of Pennsylvania|10|Computer and Information Science (NLP, ML)
+United States|Northeastern University|10|Khoury College of Computer Sciences (NLP, HCI, ML)
+United States|University of Utah|8|Kahlert School of Computing (NLP, ML)
+United States|Stony Brook University|8|Computer Science (NLP, vision)
+United States|University of Minnesota|8|Computer Science and Engineering (NLP, ML, HCI)
+United States|Virginia Tech|8|Computer Science (NLP, ML, HCI), ECE
+
+# --- Computer-vision expansion (added 2026-11-06: applied vision, detection/tracking, video, real-time)
+United Kingdom|University of Surrey|12|CVSSP (Centre for Vision, Speech and Signal Processing), Surrey Institute for People-Centred AI
+United Kingdom|Queen Mary University of London|10|Electronic Engineering and Computer Science: Computer Vision group, Multimedia and Vision, Centre for Digital Music
+United Kingdom|University of Bristol|10|Computer Science: Visual Information Laboratory, Machine Learning and Computer Vision group
+Germany|University of Tübingen|10|Tübingen AI Center, Computer Science (autonomous vision, computer vision)
+Germany|Karlsruhe Institute of Technology|10|Informatics: Computer Vision for Human-Computer Interaction lab, IAR vision and perception
+Italy|University of Trento|10|DISI: Multimedia and Human Understanding Group (MHUG), Fondazione Bruno Kessler vision groups
+Canada|York University|10|Lassonde Electrical Engineering and Computer Science; Centre for Vision Research; VISTA
+Australia|University of Adelaide|10|Australian Institute for Machine Learning (AIML), School of Computer and Mathematical Sciences (vision)
+China|Nanjing University|10|School of Computer Science / School of Intelligence Science and Technology (computer vision, video)
+Hong Kong|City University of Hong Kong|10|Computer Science, Electrical Engineering (computer vision, multimedia, video analytics)
+Turkey|Hacettepe University|8|Computer Engineering: Computer Vision Lab (HUCVL), vision and language
+United States|University of Central Florida|10|Center for Research in Computer Vision (CRCV), Computer Science, ECE

@@ -1,0 +1,6 @@
+dnspython>=2.6
+pypdf>=4
+truststore>=0.9   # OS certificate verification (Windows chains)
+pytest>=8
+# optional: JS-rendered faculty pages
+# crawl4ai

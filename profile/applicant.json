@@ -1,0 +1,306 @@
+{
+  "name": "Ogundeko Azeez Adebola",
+  "sign_off_name": "Azeez Ogundeko",
+  "credential": "B.Sc. Electronics and Computer Engineering, Lagos State University (First Class Honours, CGPA 4.59/5.0, 2024)",
+  "seeking": {
+    "degrees": [
+      "research MSc",
+      "PhD",
+      "research assistant (RA)"
+    ],
+    "intake_year": 2027,
+    "intake": "September 2027"
+  },
+  "links": {
+    "cv_url": "https://azeezogundeko.github.io/azeezogundeko/Ogundeko_Azeez_CV.pdf",
+    "github": "https://github.com/azeezogundeko",
+    "linkedin": "https://linkedin.com/in/Abdulazeez-ogundeko-3966a723b"
+  },
+  "signature": "Azeez Ogundeko\nB.Sc. Electronics and Computer Engineering (First Class Honours), Lagos State University\nCV: {{cv_url}}\nGitHub: github.com/azeezogundeko",
+  "areas": {
+    "speech": {
+      "label": "speech and language technology for low-resource African languages",
+      "terms": {
+        "speech recognition": 2,
+        "automatic speech recognition": 2,
+        "asr": 2,
+        "text-to-speech": 2,
+        "speech synthesis": 2,
+        "tts": 1,
+        "spoken language": 2,
+        "spoken dialogue": 3,
+        "speech translation": 2,
+        "self-supervised speech": 2,
+        "wav2vec": 2,
+        "whisper": 1,
+        "speech": 1,
+        "voice": 1,
+        "accent": 1,
+        "dialect": 1,
+        "multilingual": 1,
+        "low-resource": 2,
+        "low resource": 2,
+        "under-resourced": 2,
+        "african language": 3,
+        "african languages": 3,
+        "yoruba": 3,
+        "igbo": 3,
+        "hausa": 3,
+        "pidgin": 3,
+        "creole": 2,
+        "code-switching": 3,
+        "code switching": 3,
+        "codeswitching": 3,
+        "code-switched": 3,
+        "code-mixed": 3,
+        "code-mixing": 3,
+        "masakhane": 3,
+        "afrisenti": 3,
+        "african": 2,
+        "nigerian": 3,
+        "swahili": 2,
+        "zulu": 2,
+        "amharic": 2,
+        "language technology": 1
+      }
+    },
+    "trustworthy_llm": {
+      "label": "trustworthy and verifiable LLM systems",
+      "terms": {
+        "hallucination": 2,
+        "hallucinations": 2,
+        "factuality": 2,
+        "factual consistency": 2,
+        "faithfulness": 2,
+        "grounded": 2,
+        "grounding": 1,
+        "attribution": 2,
+        "citation": 2,
+        "citations": 2,
+        "verifiable": 2,
+        "verification": 1,
+        "fact-checking": 2,
+        "information extraction": 2,
+        "structured output": 2,
+        "structured prediction": 1,
+        "document understanding": 2,
+        "document ai": 2,
+        "retrieval-augmented": 2,
+        "retrieval augmented": 2,
+        "rag": 1,
+        "neuro-symbolic": 2,
+        "neurosymbolic": 2,
+        "trustworthy": 2,
+        "reliability": 1,
+        "reliable": 1,
+        "uncertainty": 1,
+        "calibration": 1,
+        "auditing": 1,
+        "reproducibility": 1,
+        "large language model": 1,
+        "large language models": 1,
+        "language model": 1,
+        "llm": 1,
+        "llms": 1,
+        "financial": 1,
+        "compliance": 2,
+        "rule-based": 1
+      }
+    },
+    "hitl_agents": {
+      "label": "human-in-the-loop autonomous agents",
+      "terms": {
+        "human-in-the-loop": 3,
+        "human in the loop": 3,
+        "human-ai": 2,
+        "human-ai collaboration": 3,
+        "human-ai interaction": 3,
+        "human oversight": 3,
+        "oversight": 1,
+        "autonomy": 2,
+        "autonomous agents": 2,
+        "llm agent": 2,
+        "llm agents": 2,
+        "language agents": 2,
+        "agentic": 2,
+        "tool use": 2,
+        "tool-use": 2,
+        "tool calling": 2,
+        "function calling": 2,
+        "escalation": 2,
+        "learning to defer": 3,
+        "deferral": 2,
+        "mixed-initiative": 2,
+        "human-centered ai": 2,
+        "human-centred ai": 2,
+        "conversational agent": 2,
+        "conversational agents": 2,
+        "dialogue system": 2,
+        "dialogue systems": 2,
+        "task-oriented dialogue": 3,
+        "multi-agent": 1,
+        "agents": 1,
+        "human-computer interaction": 1,
+        "hci": 1,
+        "interactive": 1
+      }
+    },
+    "multimodal": {
+      "label": "real-time multimodal AI systems for voice and vision",
+      "terms": {
+        "multimodal": 2,
+        "multi-modal": 2,
+        "vision-language": 2,
+        "audio-visual": 3,
+        "audiovisual": 3,
+        "video understanding": 2,
+        "video analytics": 2,
+        "real-time": 2,
+        "real time": 1,
+        "streaming": 2,
+        "low-latency": 2,
+        "latency": 1,
+        "on-device": 2,
+        "edge computing": 2,
+        "efficient inference": 2,
+        "anomaly detection": 2,
+        "object tracking": 2,
+        "multi-object tracking": 2,
+        "object detection": 1,
+        "computer vision": 1,
+        "embodied": 1,
+        "full-duplex": 3,
+        "spoken dialogue": 2
+      }
+    },
+    "vision": {
+      "label": "real-time computer vision: detection, tracking and video anomaly detection",
+      "terms": {
+        "computer vision": 3,
+        "object detection": 3,
+        "object tracking": 3,
+        "multi-object tracking": 3,
+        "visual tracking": 3,
+        "video anomaly detection": 3,
+        "video analytics": 3,
+        "video surveillance": 3,
+        "person re-identification": 2,
+        "re-identification": 2,
+        "anomaly detection": 2,
+        "video understanding": 2,
+        "action recognition": 2,
+        "activity recognition": 2,
+        "surveillance": 2,
+        "cctv": 2,
+        "yolo": 2,
+        "open-vocabulary detection": 2,
+        "visual recognition": 2,
+        "edge ai": 2,
+        "real-time detection": 3,
+        "video": 1,
+        "image": 1,
+        "images": 1,
+        "visual": 1,
+        "vision": 1,
+        "segmentation": 1,
+        "pose estimation": 1,
+        "scene understanding": 1,
+        "image recognition": 1,
+        "vision transformer": 1,
+        "convolutional neural network": 1,
+        "detection": 1,
+        "tracking": 1,
+        "camera": 1,
+        "real-time": 1,
+        "on-device": 1,
+        "efficient inference": 1,
+        "streaming": 1
+      }
+    }
+  },
+  "projects": {
+    "vonative": {
+      "name": "Vonative",
+      "url": "https://vonative.com",
+      "areas": [
+        "speech",
+        "hitl_agents",
+        "multimodal"
+      ],
+      "facts": [
+        "built a real-time voice-agent system (LiveKit, a custom dialogue state machine and a node-based workflow engine) that combines African-language STT/TTS with LLMs over Nigerian telephony",
+        "investigated failure modes in deployed agents: ASR hallucination on local-language audio, and LLMs verbalising tool calls instead of executing them, which I traced to prompt phrasing and weakly typed tool-output schemas",
+        "designed a multilingual IVR banking dialogue flow covering five Nigerian languages",
+        "targets Nigerian Pidgin and code-switched speech"
+      ]
+    },
+    "toyyib": {
+      "name": "Toyyib",
+      "url": "https://toyyib.app",
+      "areas": [
+        "trustworthy_llm"
+      ],
+      "facts": [
+        "designed a pipeline in which the LLM only proposes typed, citation-backed accounting facts from long financial filings, while a deterministic rules engine validates them and performs AAOIFI Shariah screening",
+        "missing or conflicting evidence marks only the dependent screens as insufficient",
+        "every result binds filing hashes, accepted observations, prompt/schema hashes and model identity, so any verdict can be re-derived and audited",
+        "analyst corrections become scoped, reusable mapping rules",
+        "evaluated on a real 72-page NGX filing (Docling parsing, OpenAI structured outputs) with per-call and per-run cost limits"
+      ]
+    },
+    "sarah": {
+      "name": "Sarah AI",
+      "url": "https://trysarah.ai",
+      "areas": [
+        "hitl_agents",
+        "trustworthy_llm"
+      ],
+      "facts": [
+        "designing graduated autonomy (Review, Supervised, Autonomous) for AI collections agents",
+        "routine actions run autonomously within approved limits, while disputes, vulnerability and complaints escalate to humans",
+        "autonomy increases per tenant as confidence builds",
+        "building an end-to-end agentic collections pipeline (voice, SMS, email) with approval rules and compliance-aware audit logging"
+      ]
+    },
+    "invigilx": {
+      "name": "InvigilX",
+      "url": "",
+      "areas": [
+        "multimodal",
+        "vision"
+      ],
+      "facts": [
+        "built InvigilX, integrating computer-vision models with a live alert pipeline for real-time anomaly detection",
+        "designed a follow-up platform with a hook-chain execution model (frame, detect, track, condition, alert), per-camera real-time streaming and bring-your-own-compute local inference"
+      ]
+    },
+    "scholarai": {
+      "name": "ScholarAI",
+      "url": "",
+      "areas": [
+        "trustworthy_llm"
+      ],
+      "facts": [
+        "built embedding-based semantic matching (pgvector) between parsed student CVs and scholarship/professor data, with an asynchronous processing pipeline"
+      ]
+    },
+    "mazamaza": {
+      "name": "Mazamaza",
+      "url": "https://mazamaza.xyz",
+      "areas": [
+        "multimodal"
+      ],
+      "facts": [
+        "designed a Redis-backed distributed state engine with atomic operations and fault recovery, plus Cloudflare Durable Objects for per-room state, keeping hundreds of concurrent WebSocket sessions consistent",
+        "launched to 100+ users"
+      ]
+    }
+  },
+  "other_facts": [
+    "First Class Honours, CGPA 4.59/5.0",
+    "Presidential Award, Nigerian University Engineering Students' Association (NUESA), 2024",
+    "Dangote Foundation Scholar; Federal Government Scholarship; Lagos State Scholarship Board Scholar; LASU Merit Scholar (2023-2025)",
+    "Software Engineer at Sarah AI (UK, remote contract); Fullstack Engineer at Beecon Technologies; Founder and Lead Engineer at LungiLabs",
+    "AI and Robotics mentor at AMETTSA"
+  ]
+}
